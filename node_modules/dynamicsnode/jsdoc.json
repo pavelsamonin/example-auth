@@ -1,0 +1,39 @@
+{
+  "opts":{
+    "recurse":true,
+    "destination": "docs",
+    "template":"./node_modules/ink-docstrap/template",
+    "private":true,
+    "tutorials":"./docs/tutorials"
+  },
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source":{
+    "include":["src/","readme.md"]
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "analytics":{"ua":"UA-85523002-1","domain":"dynamicsnode.js.org"},
+    "logoFile": "",
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "dateFormat": "ddd MMM Do YYYY",
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "systemName": "DynamicsNode",
+    "footer": "",
+    "copyright": "(c) Cristhian Fernandez",
+    "navType": "vertical",
+    "theme": "spacelab",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": true,
+    "protocol": "html://",
+    "methodHeadingReturns": false
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  }
+}

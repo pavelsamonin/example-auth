@@ -1,0 +1,21 @@
+configuration: Release
+
+environment: 
+    COVERALLS_REPO_TOKEN:
+        secure: 8yfAeAF3llD64/UGPX8zgr81zAk7oUGwmymum7VJFcMXpLjAPJsZtXkBnv/aT4LO
+
+build:
+    project: src\cs\DynamicsNode.sln
+
+before_build:
+    - nuget restore src\cs\DynamicsNode.sln
+
+after_build:
+    - xcopy "src\cs\DynamicsNode\bin\release\*.dll" "src\bin\" /Y /R
+    - npm install
+    - npm install mocha-lcov-reporter
+    - npm install -g nyc coveralls
+    - npm run build
+    - npm test
+    - nyc npm test
+    - nyc report --reporter=text-lcov | coveralls

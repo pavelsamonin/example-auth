@@ -1,0 +1,27 @@
+{
+  "name": "avarkom",
+  "version": "1.0.0",
+  "description": "node js for avarkom cabinet",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "author": "p.samonin",
+  "license": "ISC",
+  "dependencies": {
+    "dynamicsnode": "0.0.19",
+    "async": "*",
+    "express": "3.4.8",
+    "body-parser": "*",
+    "jade": "*",
+    "ejs": "^1.0.0",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-facebook": "*",
+    "passport-vkontakte": "*",
+    "nconf": "*",
+    "connect-flash": "*",
+    "connect-memcached": "*"
+  }
+}

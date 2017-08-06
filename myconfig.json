@@ -1,0 +1,30 @@
+{
+  "app": {
+    "host": "localhost",
+    "port": 94,
+    "schema": "http",
+    "url": "http://10.110.0.249:94"
+  },
+
+  "session": {
+    "secret": "it:demo:secret",
+    "key": "sid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  },
+
+  "memcached": {
+    "hosts": ["127.0.0.1:11211"],
+    "prefix": "it:demo:023:"
+  },
+
+  "auth": {
+    "fb": {
+      "app_id": 123456,
+      "secret": "abc123"
+    }
+  }
+}

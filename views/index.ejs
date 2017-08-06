@@ -1,0 +1,26 @@
+<% include ../views/header.ejs %>
+<div class="content">
+    <h1>Вхід здійснено</h1>
+    <div class="main">
+        <div class="row">
+            <div class="col-sm-3">
+                <span><i>Ім'я:</i> <%= user.firstname %></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <span><i>Призвіще:</i> <%= user.lastname %></span>
+            </div>
+        </div>
+    </div>
+    <div class="exit">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="/sign-out"><h3>Вихід</h3></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../views/footer.ejs %>
+
